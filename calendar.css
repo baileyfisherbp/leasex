@@ -1,0 +1,140 @@
+:host {
+  --color-bg-default: #161617;
+  --color-fg-primary: #0169ff;
+  --color-fg-default: #fff;
+  --color-fg-accent: #0169ff;
+  --color-bg-inrange: rgba(80, 80, 81, 1);
+  --day-width: 35px;
+  --day-height: 30px;
+}
+/* increase start and end */
+.container.range-plugin .calendar > .days-grid > .day.start,
+.container.range-plugin .calendar > .days-grid > .day.end {
+  font-weight: bold;
+  transform: scale(1);
+  z-index: 1;
+}
+
+.calendar > .daynames-row,
+.calendar > .days-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  row-gap: 4px !important;
+  column-gap: 4px !important;
+}
+
+.calendar > .days-grid > .day {
+  border: 3px solid transparent;
+  border-radius: 3px !important;
+  padding: 10px 0;
+  width: 1.75rem !important;
+}
+
+.calendar {
+  padding: 0px !important;
+  font-family: Poppins !important;
+}
+
+.calendar > .header {
+  align-items: center;
+  -moz-column-gap: 5px;
+  column-gap: 5px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+.month-name {
+  flex: 1;
+  font-size: 15px;
+  font-weight: 400 !important;
+}
+
+.container > footer,
+.container > header {
+  background-color: #161617 !important;
+  padding: 0px !important;
+}
+
+.container.inline {
+  box-shadow: 0 0px 0px 0 rgba(65, 69, 88, 0), 0 0px 0px 0 rgba(0, 0, 0, 0) !important;
+  height: auto;
+  left: 0;
+  position: relative;
+  top: 0;
+  transform: scaleY(1);
+}
+
+.container > footer .footer-buttons {
+  -moz-column-gap: 0.5rem;
+  column-gap: 0.5rem;
+  align-items: center;
+  grid-column-gap: 0.5rem;
+  grid-row-gap: 0.5rem;
+  margin-top: 1.25rem;
+}
+
+.container > footer .footer-buttons > button {
+  background-color: #0169ff;
+  border: 0px solid transparent !important;
+  border-radius: 0.3125rem !important;
+  cursor: pointer;
+  padding-top: 0.5rem !important;
+  padding-right: 1.25rem !important;
+  padding-bottom: 0.5rem !important;
+  padding-left: 1.25rem !important;
+  transition-property: transform, background-color;
+  transition-duration: 200ms, 200ms;
+  transition-timing-function: ease, ease;
+  color: hsla(0, 0%, 100%, 1);
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  font-size: 0.9rem;
+}
+
+.container > footer .footer-buttons > button.apply-button {
+  background-color: #0169ff !important;
+  border-color: transparent !important;
+  color: #fff !important;
+}
+
+.container > footer .footer-buttons > button.apply-button:hover {
+  border-color: transparent !important;
+  color: #fff !important;
+  background-color: #00419e !important;
+  transform: scale(0.98);
+}
+
+.container > footer .footer-buttons > button.apply-button:disabled {
+  background-color: #00419e !important;
+  border-color: transparent !important ;
+  color: #fff;
+  opacity: 50%;
+  cursor: default;
+}
+
+.container > footer .footer-buttons > button.cancel-button {
+  background-color: #505051 !important;
+  border-color: transparent !important;
+  color: #fff !important;
+}
+
+.container > footer .footer-buttons > button.cancel-button:hover {
+  background-color: #333 !important;
+  border-color: transparent !important;
+  color: #fff !important;
+  transform: scale(0.98);
+}
+
+.container > footer .footer-buttons > button.cancel-button:disabled {
+  background-color: #505051 !important;
+  border-color: transparent !important;
+  color: #fff !important;
+  cursor: default;
+  opacity: 50%;
+}
